@@ -13,4 +13,6 @@ end
 
 group :development do
   gem 'rerun'
+  gem 'guard'
+  gem 'guard-rspec'
 end

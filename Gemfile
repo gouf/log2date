@@ -6,6 +6,8 @@ gem 'rack'
 
 group :test do
   gem 'rspec'
+  gem 'capybara'
+  gem 'capybara-webkit'
 end
 
 group :development do

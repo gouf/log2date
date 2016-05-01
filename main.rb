@@ -3,13 +3,11 @@ require 'time'
 class MyApp < Sinatra::Base
   def time_input
     _day, time, _time_zone = Time.now.to_s.split(' ')
-    "<input type='datetime' value='#{Time.now.to_s.delete(' ')}'>"
     %Q(<input type='time' value='#{Time.now.to_s.delete(' ')}'>)
   end
 
   def date_input
     day, _time, _time_zone = Time.now.to_s.split(' ')
-    "<input type='datetime' value='#{Time.now.to_s.delete(' ')}'>"
     %Q(<input type='date' value='#{day}'>)
   end
 

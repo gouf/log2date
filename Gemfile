@@ -5,6 +5,7 @@ gem 'slim'
 gem 'rack'
 
 group :test do
+  gem 'rspec'
 end
 
 group :development do
